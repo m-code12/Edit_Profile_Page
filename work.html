@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8" />
+    <title>Profile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap Css -->
+
+    <link href="bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+    
+    <style>
+
+    	.one {
+    		z-index: 1;
+            position: absolute;
+            top: 0;
+            margin-top: 230px;
+            margin-left: 315px;
+            
+            font-family: "Verdana";
+    	}
+        .two {
+            position: relative;
+        }
+        .first {
+            position: absolute;
+            top: 0;
+            margin-top: 230px;
+            margin-left: 65px;
+            font-family: "Verdana";
+        }
+        .nav-tabs .nav-link.active {
+            border-right: none !important;
+        }
+
+        .text-primary {
+            color: #0082F3;
+        }
+
+        .img-width {
+            width: 90%;
+        }
+
+        .base-line {
+            position: relative;
+        }
+
+        .base-line span {
+            background-color: white;
+            padding-right: 10px;
+        }
+
+        .base-line:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 0.5em;
+            border-top: 1px solid #efefef;
+            z-index: -1;
+        }
+
+        .mt-view-n4 {
+            margin-top: 0;
+        }
+
+        .badge-soft-primary {
+            background-color: #E3F2FD;
+            color: #0082F3;
+        }
+
+        .vertical-super {
+            vertical-align: super;
+        }
+
+        .card-header {
+            background-color: white;
+        }
+        .border-content-right {
+            border-right: 1px solid #eff2f7;
+        }
+        .ffont {
+            font-size: 15px;
+        }
+
+        @media(min-width: 1200px) {
+            .mt-view-n4 {
+                margin-top: -1.5rem;
+            }
+        }
+
+        @media(max-width: 991.98px) {
+            .img-width {
+                width: 33%;
+                border-radius: 50% !important;
+            }
+
+            .username {
+                display: none;
+            }
+
+            .details-user {
+                text-align: center;
+            }
+
+            .vertical-super {
+                display: block;
+                margin-top: 0.8rem;
+                margin-bottom: 1rem;
+            }
+
+            .border-content-right {
+                border-right: none;
+            }
+        }
+        
+    </style>
+</head>
+
+<body data-sidebar="dark">
+   
+<section class="mt-0 two">
+
+    <img src="https://images.unsplash.com/photo-1550645612-83f5d594b671?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" width="1366" height="430" align="center">
+
+</section>
+
+<section id="contact">
+    <div class="row">
+        <div class="col-lg-3 first">
+            <div class="card shadow ml-2" style="width: 13rem;">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item rounded text-primary"><a href="about.html"><b>About</b></a></li>
+                    <li class="list-group-item text-primary"><a href="contact.html"><b>Contact Information</b></a></li>
+                    <li class="list-group-item text-primary"><a href="education.html"><b>Education Details</b></a></li>
+                    <li class="list-group-item text-primary"><a href="technical.html"><b>Technical Skills</b></a></li>
+                    <li class="list-group-item text-primary border-primary"><a href="project.html"><b>Project Works</b></a></li>
+                    <li class="list-group-item rounded text-primary bg-light border-primary"><a href="work.html"><b>Work Experience</b></a></li>
+                </ul>
+            </div>
+        </div>
+   
+        <div class="col-lg-9 one">
+            <div class="card shadow rounded" style="width: 60rem;">
+                <div class="card-body text-center">
+                    <h1 align="left" class="text-primary mt-2 ml-4">Work Experience</h1><br>
+                    <hr>
+                    <form class="ml-2">
+                        <div class="row mt-4" align="left">
+                            <div class="col">
+                                <label><h4>Company Name</h4></label>
+                                <input type="text" class="form-control ffont">
+                            </div>
+                            <div class="col">
+                                <label><h4>Designation</h4></label>
+                                <input type="text" class="form-control text-dark ffont">
+                            </div>
+                        </div>
+                        <button class="btn btn-lg mt-2 mb-3 rounded bg-success text-white mr-4 float-right">+</button><br>
+                        <button class="btn btn-lg mt-4 mb-3 rounded bg-dark text-white mr-4">Cancel</button>
+                        <button class="btn btn-lg mt-4 mb-3 rounded bg-primary text-white" onclick="wright()">Finish</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> 
+
+
+
+
+
+    <!-- End Page-content -->
+
+
+       <!--- <footer class="footer bg-light" style="left: 0px;">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-6">--->
+                        <!-- <script>document.write(new Date().getFullYear())</script> © IncubateIND. -->
+                   <!--- </div>
+                    <div class="col-sm-6">
+                        <div class="text-sm-right d-none d-sm-block">
+                            <script>
+                                document.write(new Date().getFullYear())
+                            </script> © IncubateIND.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>---->
+        <!-- end main content-->
+        <script type="text/javascript">
+            function wright(){
+                alert("Account created successfully");
+            }
+        </script>
+</body>
+</html>
