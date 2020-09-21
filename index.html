@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8" />
+    <title>Profile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- App favicon -->
+    <!---<link rel="shortcut icon" href="/innovation/img/favicon.png" type="image/x-icon">
+
+    owl.carousel css -->
+   <!--- <link rel="stylesheet" href="assets/libs/owl.carousel/assets/owl.carousel.min.css">
+
+    <link rel="stylesheet" href="assets/libs/owl.carousel/assets/owl.theme.default.min.css">
+
+    Bootstrap Css -->
+
+    <link href="bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- Icons Css -->
+    <!---<link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    App Css-->
+    <!--<link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />---->
+    <style>
+
+    	.fa {
+            transform: scale(1.9,1.9);
+        }
+
+    	.one {
+    		z-index: 1;
+            position: absolute;
+            top: 0;
+            margin-top: 290px;
+            margin-left: 315px;
+            
+            font-family: "Verdana";
+    	}
+        .two {
+            position: relative;
+        }
+        .first {
+            position: absolute;
+            top: 0;
+            margin-top: 290px;
+            margin-left: 65px;
+            font-family: "Verdana";
+        }
+
+        .text-primary {
+            color: #0082F3;
+        }
+
+        .img-width {
+            width: 90%;
+        }
+
+        .base-line {
+            position: relative;
+        }
+
+        .base-line span {
+            background-color: white;
+            padding-right: 10px;
+        }
+
+        .base-line:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 0.5em;
+            border-top: 1px solid #efefef;
+            z-index: -1;
+        }
+
+        .mt-view-n4 {
+            margin-top: 0;
+        }
+
+        .badge-soft-primary {
+            background-color: #E3F2FD;
+            color: #0082F3;
+        }
+
+        .vertical-super {
+            vertical-align: super;
+        }
+
+        .card-header {
+            background-color: white;
+        }
+        .border-content-right {
+            border-right: 1px solid #eff2f7;
+        }
+        .ffont {
+            font-size: 15px;
+        }
+
+        @media(min-width: 1200px) {
+            .mt-view-n4 {
+                margin-top: -1.5rem;
+            }
+        }
+
+        @media(max-width: 991.98px) {
+            .img-width {
+                width: 33%;
+                border-radius: 50% !important;
+            }
+
+            .notification {
+  background-color: #555;
+  color: white;
+  text-decoration: none;
+  padding: 15px 26px;
+  position: relative;
+  display: inline-block;
+  border-radius: 2px;
+}
+
+		.notification .badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  padding: 5px 10px;
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+}
+         
+            .username {
+                display: none;
+            }
+
+            .details-user {
+                text-align: center;
+            }
+
+            .vertical-super {
+                display: block;
+                margin-top: 0.8rem;
+                margin-bottom: 1rem;
+            }
+
+            
+            .border-content-right {
+                border-right: none;
+            }
+        }
+        
+    </style>
+</head>
+
+<body data-sidebar="dark">
+
+    <!-- Begin page -->
+    <!---<div id="layout-wrapper">
+        <header id="page-topbar">
+            <div class="navbar-header">
+                <div class="d-flex">
+                    LOGO -->
+                    <!----<div>
+                        <a href="index.html" class="logo logo-light">
+                            <span class="logo-sm ml-n4">
+                                <img src="assets/images/logo-light-inc.png" alt="" width="200">
+                            </span>
+                            <span class="logo-lg">
+                                <img src="assets/images/logo-light-inc.png" alt="" width="200">
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="d-flex">
+                    <div class="dropdown d-inline-block">
+                        <button type="button" class="btn header-item noti-icon waves-effect"
+                            id="page-header-notifications-dropdown" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            <i class="bx bx-bell "></i>
+                            <span class="badge badge-danger badge-pill">0</span>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right p-0"
+                            aria-labelledby="page-header-notifications-dropdown">
+                            <div class="p-3">
+                                <div class="row align-items-center">
+                                    <div class="col">
+                                        <h6 class="m-0"> Notifications </h6>
+                                    </div>
+                                    <div class="col-auto">
+                                            <a href="#!" class="small"> View All</a>
+                                        </div> -->
+                                <!----</div>
+                            </div>
+                            <div data-simplebar style="max-height: 230px;">
+                                <a href="#" class="text-reset notification-item">
+                                    <div class="media">
+                                        <div class="media-body">
+                                            <div class="font-size-12 text-muted text-center">
+                                                <p class="mb-1">No New Notifications</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="p-2 border-top">
+                                <a class="btn btn-sm btn-link font-size-14 btn-block text-center"
+                                    href="javascript:void(0)">
+                                    <i class="mdi mdi-arrow-right-circle mr-1"></i> View More..
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown d-lg-inline-block ml-1">
+                        <button type="button" class="btn header-item noti-icon waves-effect" data-toggle="fullscreen">
+                            <i class="bx bx-home-circle align-middle mr-1"></i>
+                            <span class="d-none d-sm-inline-block">Home</span>
+                        </button>
+                    </div>
+                    <div class="dropdown d-inline-block">
+                        <button type="button" class="btn header-item waves-effect " id="page-header-user-dropdown"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img class="rounded-circle header-profile-user" src="assets/images/users/avatar-1.jpg"
+                                    alt="Header Avatar">
+                                <span class="d-none d-xl-inline-block ml-1">Rex</span> -->
+                            <!----<div class="avatar-xs d-inline-block">
+                                <span class="avatar-title rounded-circle bg-soft-primary text-primary font-size-16">
+                                    R
+                                </span>
+                            </div>
+                            <span class="d-none d-xl-inline-block ml-1">Rex</span>
+
+                            <i class="mdi mdi-chevron-down d-none d-xl-inline-block"></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right">
+                             item-->
+                            <!----<a class="dropdown-item" href="#">
+                                <i class="bx bx-user font-size-16 align-middle mr-1"></i>
+                                Profile
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <i class="bx bxs-dashboard font-size-16 align-middle mr-1"></i>
+                                Dashboard
+                            </a>
+                            <a class="dropdown-item d-block" href="#">
+                                <i class="bx bx-wrench font-size-16 align-middle mr-1"></i>
+                                Edit Profile
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-danger" href="#">
+                                <i class="bx bx-power-off font-size-16 align-middle mr-1 text-danger"></i>
+                                Logout
+                            </a>
+                        </div>
+                    </div>
+                    <div class="dropdown d-inline-block">
+                        <button type="button" class="btn header-item noti-icon right-bar-toggle waves-effect">
+                            <i class="bx bx-brightness-half"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>----->
+
+    <!---<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    	<ul class="navbar-nav ml-auto">
+    		<li class="nav-item active">
+    			<li class="nav-item">
+    				</li>
+       
+</li>
+</ul>
+
+<a href="#" class="notification">
+      <i class="fa fa-bell mt-4" aria-hidden="true"></i>
+       	<span class="badge">0</span>
+       </a>
+</nav>---->
+  <!---<a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+       <div><i class="fa fa-bell" aria-hidden="true"></i></div>
+
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>---->
+
+    
+   
+<section class="mt-0 two">
+
+    <img src="https://images.unsplash.com/photo-1550645612-83f5d594b671?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" width="1348" height="430" align="center">
+
+</section>
+
+<section id="about">
+<div class="row">
+    <div class="col-lg-3 first">
+        <div class="card shadow ml-2" style="width: 13rem;">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item rounded text-primary bg-light border-primary"><a href="editpage.html"><b>About</b></a></li>
+                <li class="list-group-item text-primary"><a href="contact.html"><b>Contact Information</b></a></li>
+                <li class="list-group-item text-primary"><a href="education.html"><b>Education Details</b></a></li>
+                <li class="list-group-item text-primary"><a href="technical.html"><b>Technical Skills</b></a></li>
+                <li class="list-group-item text-primary"><a href="project.html"><b>Project Works</b></a></li>
+                <li class="list-group-item rounded text-primary"><a href="work.html"><b>Work Experience</b></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="col-lg-9 one">
+        <div class="card shadow rounded" style="width: 60rem;">
+            <div class="card-body text-center">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <img src="https://images.unsplash.com/photo-1581093583449-8255a7d46e66?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" class="rounded-circle ml-1 mt-3 mb-1 mr-2" alt="100x100" height="350">
+                            <h5 class="mt-3 text-dark username">Monika Jha<br><br>Frontend Developer<br><button type="button" class="btn btn-primary btn-lg mt-3 rounded-pill" data-toggle="button" aria-pressed="false" autocomplete="off">Update Picture</button></h5>
+                             
+                        </div>
+                    </div>
+                    <div class="col-lg-8 mt-2">
+                        <h5 class="my-2 text-primary username d-inline">@monikajha&nbsp;&nbsp;<span class="badge badge-soft-primary font-size-12 align-middle px-3 mx-2 py-1">Innovator&nbsp;&nbsp;&nbsp;&nbsp;
+                        </span><img class="mr-2 ml-1" src="https://img.icons8.com/color/26/000000/tiktok-verified-account.png" /></h5>
+                        <br>
+                        <hr>
+                        <form>
+                            <div class="row mt-4 mt" align="left">
+                                <div class="col">
+                                    <label><h4>Full Name</h4></label>
+                                    <input type="text" class="form-control ffont" value="Monika Jha">
+                                </div>
+                                <div class="col">
+                                    <label><h4>Username</h4></label>
+                                    <input type="text" class="form-control text-dark bg-light ffont" disabled placeholder="@monikajha">
+                                </div>
+                            </div>
+                            <div class="mt-4" align="left">
+                                <label><h4>Email address</h4></label>
+                                <input type="email" class="form-control bg-light ffont" disabled placeholder="monikajha73@gmail.com">
+                            </div>
+                            <div class="row mt-4" align="left">
+                                <div class="col">
+                                    <label for="gender"><h4>Gender</h4></label>
+                                    <select id="gender" class="form-control ffont">
+                                        <option selected>Male</option>
+                                        <option>Female</option>
+                                        <option>Other</option>
+                                    </select>
+                                </div>
+    
+                                <div class="col">
+                                    <label><h4>DOB</h4></label>
+
+                                    <input type="date" class="form-control text-dark ffont" placeholder="DD/MM/YY">
+                                </div>
+                            </div>
+                            <div class="row mt-4" align="left">
+                                <div class="col">
+                                    <label><h4>State</h4></label>
+                                    <input type="text" class="form-control text-dark ffont">
+                                </div>
+                                <div class="col">
+                                    <label><h4>City</h4></label>
+                                    <input type="text" class="form-control text-dark ffont">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col form-group mt-4" align="left">
+                                    <label for="exampleFormControlTextarea1"><h4>Bio</h4></label>
+                                    <textarea class="form-control ffont" id="exampleFormControlTextarea1" rows="5" placeholder="Your Bio"></textarea>
+                                </div>
+                                <div class="col form-group mt-4" align="left">
+                                    <label for="exampleFormControlTextarea1"><h4>Headline</h4></label>
+                                    <textarea class="form-control ffont" id="exampleFormControlTextarea1" rows="2" placeholder="Your Headline"></textarea>
+                                </div>
+                            </div>
+                            <button class="btn btn-lg mt-3 mb-3 rounded bg-dark text-white mr-4">Cancel</button>
+                        <button class="btn btn-lg mt-3 mb-3 rounded bg-primary text-white">Save</button>
+                            
+                        </form>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+</div> 
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- End Page-content -->
+
+
+       <!--- <footer class="footer bg-light" style="left: 0px;">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-6">--->
+                        <!-- <script>document.write(new Date().getFullYear())</script> © IncubateIND. -->
+                   <!--- </div>
+                    <div class="col-sm-6">
+                        <div class="text-sm-right d-none d-sm-block">
+                            <script>
+                                document.write(new Date().getFullYear())
+                            </script> © IncubateIND.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>---->
+        <!-- end main content-->
+
+    </div>
+    <!-- END layout-wrapper -->
+    <!-- Right Sidebar -->
+   <!--- <div class="right-bar">
+        <div data-simplebar class="h-100">
+            <div class="rightbar-title px-3 py-4">
+                <a href="javascript:void(0);" class="right-bar-toggle float-right">
+                    <i class="mdi mdi-close noti-icon"></i>
+                </a>
+                <h5 class="m-0">Switch Mode</h5>
+            </div>
+
+            Settings -->
+            <!---<hr class="mt-0" />
+            <h6 class="text-center mb-0">Choose Mode</h6>
+
+            <div class="p-4">
+                <div class="custom-control custom-switch mb-3">
+                    <input type="checkbox" class="custom-control-input theme-choice" id="light-mode-switch"
+                        data-bsStyle="assets/css/bootstrap.min.css" data-appStyle="assets/css/app.min.css" />
+                    <label class="custom-control-label" for="light-mode-switch">Light Mode</label>
+                </div>
+
+                <div class="custom-control custom-switch mb-3">
+                    <input type="checkbox" class="custom-control-input theme-choice" id="dark-mode-switch"
+                        data-bsStyle="assets/css/bootstrap-dark.min.css" data-appStyle="assets/css/app-dark.min.css"
+                        checked />
+                    <label class="custom-control-label" for="dark-mode-switch">Dark Mode</label>
+                </div>
+            </div>
+
+        </div>  end slimscroll-menu
+    </div>-->
+    <!-- /Right-bar -->
+
+    <!-- Right bar overlay-->
+    <div class="rightbar-overlay"></div>
+
+    <!-- JAVASCRIPT -->
+   <!--- <script src="assets/libs/jquery/jquery.min.js"></script>
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/libs/metismenu/metisMenu.min.js"></script>
+    <script src="assets/libs/simplebar/simplebar.min.js"></script>
+    <script src="assets/libs/node-waves/waves.min.js"></script>---->
+
+    <!-- apexcharts -->
+   <!--- <script src="assets/libs/apexcharts/apexcharts.min.js"></script>
+
+    <script src="assets/js/pages/dashboard.init.js"></script>---->
+
+    <!-- owl.carousel js -->
+    <!---<script src="assets/libs/owl.carousel/owl.carousel.min.js"></script>---->
+
+    <!-- timeline init js -->
+   <!--- <script src="assets/js/pages/timeline.init.js"></script>---->
+
+
+    <!-- App js -->
+    <!---<script src="assets/js/app.js"></script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>----->
+</body>
+</html>
